@@ -10,6 +10,15 @@
 :root {
     --primary-color: #427aa1;
     --text-color: black;
+    --background-color: whitesmoke;
+} /* the default color scheme if light */
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --primary-color: #fc9558;
+        --text-color: #d7dee5;
+        --background-color: black;
+    }
 }
 
 html {
@@ -18,14 +27,14 @@ html {
 
 body {
     font-family: Inter, sans-serif;
-    background-color: whitesmoke;
-    color: black;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* common styles */
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: var(--text-color);
 }
 img {
     width: 100%;
@@ -76,7 +85,7 @@ img {
     max-width: 250px;
 }
 .profile_name_firstName{
-    color: black;
+    color: var(--text-color);
     font-weight: 200;
     font-size: clamp(2rem, 8vw, 4rem); /* adjusts the text from 2rem to 4rem according to the width of screen. */
     text-transform: uppercase;
@@ -88,7 +97,7 @@ img {
     font-weight: 700;
     font-size: clamp(2.5rem, 15vw, 7rem);
     text-transform: uppercase;
-    display: black;
+    display: var(--text-color);
 }
 .profile_title{
     font-size: 1.5rem;
