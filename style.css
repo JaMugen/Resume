@@ -9,8 +9,9 @@
 
 :root {
     --primary-color: #427aa1;
-    --text-color: black;
+    --text-color: rgb(106, 106, 106);
     --background-color: whitesmoke;
+    --item_title-color: black;
 } /* the default color scheme if light */
 
 @media (prefers-color-scheme: dark){
@@ -18,8 +19,9 @@
         --primary-color: #fc9558;
         --text-color: #d7dee5;
         --background-color: black;
+        --item_title-color: white;
     }
-}
+} 
 
 html {
     font-size: 10px;
@@ -51,6 +53,22 @@ img {
     font-size: 2rem;
     text-transform: uppercase;
 }
+.item_preTitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: var(--item_title-color);
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
 
 /* layouts */
 .container{
@@ -74,6 +92,12 @@ img {
 .profile{
     grid-column: 1 / -1; /* will takes up both columns */
     margin-bottom: 2rem;
+}
+.group-1
+.group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
 
 /* profile */
@@ -114,7 +138,7 @@ img {
     color: var(--primary-color)
 }
 @media only screen and (max-width: 768px) {
-    .profile_container {
+    .profile_container { 
         flex-direction: column;
     }
 }
@@ -126,8 +150,34 @@ img {
     line-height: 2;
 }
 
+/* Reference */
+.ref_item{
+    margin-top: 2rem;
+}
+.ref_name{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
 
+/* education */
+.edu_item{
+    margin-top: 2rem;
+}
 
+/*certification*/
+.certification_item{
+    margin-top: 2rem;
+}
+
+/* Experience */
+.experience_item{
+    margin-top: 2rem;
+}
+
+/* awards */
+.awards_item{
+    margin-top: 2rem;
+}
 
 
 
