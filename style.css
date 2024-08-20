@@ -9,7 +9,7 @@
 
 :root {
     --primary-color: #427aa1;
-    --text-color: rgb(106, 106, 106);
+    --text-color: rgb(120, 31, 1);
     --background-color: whitesmoke;
     --item_title-color: black;
 } /* the default color scheme if light */
@@ -17,7 +17,7 @@
 @media (prefers-color-scheme: dark){
     :root {
         --primary-color: #fc9558;
-        --text-color: #d7dee5;
+        --text-color: #d3e1f0;
         --background-color: black;
         --item_title-color: white;
     }
