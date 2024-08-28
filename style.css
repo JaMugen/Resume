@@ -76,6 +76,12 @@ img {
     color: var(--text-color);
     font-weight: 400;
 }
+.webpageLink{
+    text-decoration: underline;
+}
+.webpageLink:hover {
+    color: var(--primary-color);
+}
 
 /* layouts */
 .container{
@@ -183,9 +189,6 @@ img {
 .profile_webLink{
     margin-top: 1rem;
 }
-.webpageLink:hover {
-    color: var(--primary-color);
-}
 @media only screen and (max-width: 768px) {
     .profile_container { 
         flex-direction: column;
@@ -221,6 +224,13 @@ img {
 /* Experience */
 .experience_item{
     margin-top: 2rem;
+}
+/* Projects */
+.projects_item{
+    margin-top: 2rem;
+}
+.project_webLink{
+    margin-top: 1rem;
 }
 /* Relevant Coursework */
 .rc_item{
