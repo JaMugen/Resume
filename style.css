@@ -162,6 +162,9 @@ img {
     font-weight: 400;
     text-transform: uppercase;
 }
+.profile_descriptiion{
+    text-indent: 2rem;
+}
 /*
 .downloadBtn{
     display: block;
